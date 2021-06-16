@@ -41,6 +41,36 @@
     padding-bottom: 30px;
 }
 
+.section-contact {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    min-height: 500px;
+}
+
+.section-contact .row {
+    margin-bottom: 0;
+}
+
+.section-contact .card-panel {
+    position: relative;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+.section-contact #map {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+footer {
+    position: relative;
+}
+
 @media (max-width: 992px) {
     .main-header {
         height: 50vh;

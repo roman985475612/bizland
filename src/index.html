@@ -9,20 +9,21 @@
     <title>BizLand</title>
 </head>
 <body>
-    <header class="main-header">
+    <header id="home" class="main-header">
         <div class="primary-overlay">
             <div class="navbar-fixed">
                 <nav class="transparent">
                     <div class="container">
                         <div class="nav-wrapper">
-                            <a href="#!" class="brand-logo">Bizland</a>
+                            <a id="logoBtn" href="#home" class="brand-logo">Bizland</a>
                             <a href="#!" class="sidenav-trigger" data-target="mobile-demo"><i class="material-icons">menu</i></a>
-                            <ul class="right hide-on-med-and-down">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#testimonials">Testimonials</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                                <li><a href="#!" class="btn blue">Download</a></li>
+                            <ul id="menu" class="right hide-on-med-and-down">
+                                <li class="active"><a class="menu-link" href="#home">Home</a></li>
+                                <li><a class="menu-link" href="#features">Features</a></li>
+                                <li><a class="menu-link" href="#about">About</a></li>
+                                <li><a class="menu-link" href="#testimonials">Testimonials</a></li>
+                                <li><a class="menu-link" href="#contact">Contact</a></li>
+                                <li><a class="btn blue">Download</a></li>
                             </ul>
                         </div>
                     </div>
@@ -46,15 +47,15 @@
                         <h1>Right Place To Start</h1>
                         <p class="flow-text">to take your business to the next level with our services that have taken companies to the fortune 500</p>
                         <br>
-                        <a href="#about" class="btn btn-large white black-text">Learn More</a>
-                        <a href="#contact" class="white-text"><i class="material-icons medium scroll-icon">arrow_drop_down_circle</i></a>
+                        <a id="aboutBtn" href="#about" class="btn btn-large white black-text">Learn More</a>
+                        <a id="contactBtn" href="#contact" class="white-text"><i class="material-icons medium scroll-icon">arrow_drop_down_circle</i></a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="section-boxes center">
+    <section id="features" class="section-boxes center">
         <div class="row">
             <div class="col s12 m6 l3 blue white-text box">
                 <i class="material-icons medium">show_chart</i>
@@ -80,6 +81,157 @@
     </section>
     <!-- /.section-boxes center -->
 
+    <section id="about" class="section section-about grey lighten-3 center">
+        <div class="container">
+            <h2>About BizLand</h2>
+            <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam deserunt ut sequi blanditiis esse eveniet maiores, molestias neque libero iusto, magnam distinctio qui aut ducimus!</p>
+            <div class="row">
+                <div class="col s12 m6">
+                    <picture>
+                        <source srcset="" type="image/webp">
+                        <img src="img/people.jpg" alt="People" class="responsive-img circle">
+                    </picture>
+                </div>
+                <div class="col s12 m5 offset-m1">
+                    <ul class="collection with-header z-depth-4">
+                        <li class="collection-header">
+                            <h5>Services</h5>
+                        </li>
+                        <li class="collection-item">
+                            <i class="material-icons left">check</i>
+                            Business Consultation
+                        </li>
+                        <li class="collection-item">
+                            <i class="material-icons left">check</i>
+                            Financial Analitycs
+                        </li>
+                        <li class="collection-item">
+                            <i class="material-icons left">check</i>
+                            Security Services
+                        </li>
+                        <li class="collection-item">
+                            <i class="material-icons left">check</i>
+                            Marketing & Advertising
+                        </li>
+                        <li class="collection-item">
+                            <i class="material-icons left">check</i>
+                            Internet Services
+                        </li>
+                        <li class="collection-item">
+                            <i class="material-icons left">check</i>
+                            Accounting
+                        </li>
+                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.section section-about grey lighten-3 center -->
+
+    <section id="testimonials" class="section section-testimonials blue white-text center">
+        <div class="container">
+            <h2>What Our Client Say</h2>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card grey lighten-4 black-text z-depth-4">
+                        <div class="card-content">
+                            <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odio delectus provident, quia pariatur nesciunt fugit quos qui voluptas consequuntur.</em></p>
+                        </div>
+                        <div class="card-action">
+                            <p>John Doe From ABC, Inc</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card grey lighten-4 black-text z-depth-4">
+                        <div class="card-content">
+                            <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odio delectus provident, quia pariatur nesciunt fugit quos qui voluptas consequuntur.</em></p>
+                        </div>
+                        <div class="card-action">
+                            <p>Sarah Smith From DDW, Corp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card grey lighten-4 black-text z-depth-4">
+                        <div class="card-content">
+                            <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odio delectus provident, quia pariatur nesciunt fugit quos qui voluptas consequuntur.</em></p>
+                        </div>
+                        <div class="card-action">
+                            <p>Susan Boil From PBS, Inc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.section section-testimonial blue white-text center -->
+
+    <section id="contact" class="section section-contact center">
+        <div id="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2fc8fdb104d57fe290fd9fe5c6fd8f2e15a582a9b0c295e96a2d4e4c8e04f85e&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 offset-m6">
+                    <div class="card-panel z-depth-5">
+                        <h4>Contact Us</h4>
+                        <form action="">
+                            <div class="input-field">
+                                <input type="text" id="name" placeholder="Name">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="email" id="email" placeholder="Email">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" id="phone" placeholder="Phone">
+                                <label for="phone">Phone</label>
+                            </div>
+                            <div class="input-field">
+                                <textarea class="materialize-textarea" id="msg" placeholder="Message"></textarea>
+                                <label for="msg">Message</label>
+                            </div>
+                            <button class="btn blue-grey">Sumbit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /#contact.section section-contact center -->
+
+    <footer class="page-footer blue-grey darken-1">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5>Location</h5>
+              <p>BizLand, INC</p>
+              <p>555 Somewhere Drive, Bostom MA</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="white-text" href="#home">Home</a></li>
+                    <li><a class="white-text" href="#about">About</a></li>
+                    <li><a class="white-text" href="#testimonials">Testimonials</a></li>
+                    <li><a class="white-text" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright blue-grey darken-4">
+          <div class="container">
+          BizLand Theme &copy; 2021
+          <a id="backToTop" class="grey-text text-lighten-4 right" href="#!">
+              <i class="material-icons left">keyboard_arrow_up</i>
+              Back to Top
+          </a>
+          </div>
+        </div>
+    </footer>
+          
     <script src="js/main.min.js"></script>
 </body>
 </html>
